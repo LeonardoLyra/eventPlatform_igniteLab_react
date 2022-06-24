@@ -4,7 +4,16 @@ module.exports = {
     './src/**/*.tsx'
   ],
   theme: {
+    screens: {      
+      'tablet': '640px',
+      '980w': {'min': '980px'},
+      'laptop': '1024px',
+      'desktop': '1280px',
+    },
     extend: {
+      backgroundImage: {
+        blur: 'url(/src/assets/blur-background.png)'
+      },
       fontFamily: {
         sans: 'Roboto, sans-serif'
       },
